@@ -109,12 +109,12 @@ namespace Topic_2_Operators
             //////////////// Level 3 ////////////////
             ///
 
-            // Task 8  ...not yet finished
+            // Task 8  
 
             decimal originalPrice;
             int discount;
 
-            Console.Write("\n\t\tTask 8\n\tPlease enter original price: ");
+            Console.Write("\n\t\tTask 8\n\t\tPlease enter original price: ");
             if (!decimal.TryParse(Console.ReadLine(), out originalPrice))
             {
                 Console.WriteLine("\t\t~~~~~~~Error~~~~~~~");
@@ -126,6 +126,24 @@ namespace Topic_2_Operators
                 Console.WriteLine("\t\t~~~~~~~Error~~~~~~~");
                 //return;
             }
+            Console.WriteLine($"\t\tThe amount of the discount = {originalPrice * discount / 100} PLN" +
+                $"\n\t\tThe final price = {originalPrice - originalPrice * discount / 100}");
+
+
+            // Task 9
+
+            Console.Write("\n\t\tTask 8\n\t\tPlease enter a number: ");
+            if (!int.TryParse(Console.ReadLine(), out userNumber))
+            {
+                Console.WriteLine("\t\t~~~~~~~Error~~~~~~~");
+                //return;
+            }
+            if (userNumber >= 10 && userNumber <= 100)
+                Console.WriteLine("The number lies within the range from 10 to 100, inclusive.");
+
+
+            // Task 10 verbally
+
 
         }
     }

@@ -29,7 +29,7 @@ namespace Topic_2_Operators
             if (!int.TryParse(Console.ReadLine(), out userNumber))
             {
                 Console.WriteLine("~~~~~~~Error~~~~~~~");
-                //return;
+                return;
             }
             Console.WriteLine(userNumber % 2 == 0 ? "Even" : "Odd");
 
@@ -53,7 +53,7 @@ namespace Topic_2_Operators
             if (!int.TryParse(Console.ReadLine(), out userAge))
             {
                 Console.WriteLine("\t~~~~~~~Error~~~~~~~");
-                //return;
+                return;
             }
             bool isAdult, isMinor, isTwenty, isYoungAdult;
             isAdult = userAge >= 18;
@@ -93,13 +93,13 @@ namespace Topic_2_Operators
             if (!int.TryParse(Console.ReadLine(), out userFirstNumber))
             {
                 Console.WriteLine("\t~~~~~~~Error~~~~~~~");
-                //return;
+                return;
             }
             Console.Write("\n\tPlease enter second number: ");
             if (!int.TryParse(Console.ReadLine(), out userSecondNumber))
             {
                 Console.WriteLine("\t~~~~~~~Error~~~~~~~");
-                //return;
+                return;
             }
             Console.WriteLine(userFirstNumber > userSecondNumber ? userFirstNumber + " is greater" :
                  userSecondNumber > userFirstNumber ? userSecondNumber + " is greater":
@@ -118,13 +118,13 @@ namespace Topic_2_Operators
             if (!decimal.TryParse(Console.ReadLine(), out originalPrice))
             {
                 Console.WriteLine("\t\t~~~~~~~Error~~~~~~~");
-                //return;
+                return;
             }
             Console.Write("\n\t\tPlease enter the discount as a percentage: ");
             if (!int.TryParse(Console.ReadLine(), out discount))
             {
                 Console.WriteLine("\t\t~~~~~~~Error~~~~~~~");
-                //return;
+                return;
             }
             Console.WriteLine($"\t\tThe amount of the discount = {originalPrice * discount / 100} PLN" +
                 $"\n\t\tThe final price = {originalPrice - originalPrice * discount / 100}");
@@ -136,7 +136,7 @@ namespace Topic_2_Operators
             if (!int.TryParse(Console.ReadLine(), out userNumber))
             {
                 Console.WriteLine("\t\t~~~~~~~Error~~~~~~~");
-                //return;
+                return;
             }
             if (userNumber >= 10 && userNumber <= 100)
                 Console.WriteLine("The number lies within the range from 10 to 100, inclusive.");

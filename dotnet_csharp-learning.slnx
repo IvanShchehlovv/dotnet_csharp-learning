@@ -1,4 +1,5 @@
 <Solution>
   <Project Path="Topic_2_Operators/Topic_2_Operators.csproj" />
+  <Project Path="Topic_3_Conditions/Topic_3_Conditions.csproj" Id="dea433d5-df83-411e-a057-daf53ec661dc" />
   <Project Path="Volleyball Match Calculator/Volleyball Match Calculator.csproj" Id="0f3f4142-51fc-4671-bc7a-7ea5f4c5a191" />
 </Solution>
